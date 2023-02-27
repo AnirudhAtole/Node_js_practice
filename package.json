@@ -1,0 +1,23 @@
+{
+  "name": "node_js_developer",
+  "version": "1.0.0",
+  "description": "Complete node js developer",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnirudhAtole/Node_js_practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnirudhAtole/Node_js_practice/issues"
+  },
+  "homepage": "https://github.com/AnirudhAtole/Node_js_practice#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
