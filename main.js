@@ -1,13 +1,7 @@
+const http = require('http');
 
-const product = (param1 , param2) => param1 * param2;
+const server = http.createServer((req,res)=>{
+    console.log("My name is Anirudh");
+})
 
-console.log(product(3,3));
-
-const student ={
-    name : "Manish",
-    greet(){
-        console.log(`My name is ${this.name}`);
-    }
-}
-
-student.greet()
+server.listen(4000);
