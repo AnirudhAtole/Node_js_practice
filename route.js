@@ -1,4 +1,5 @@
 
+const exp = require('constants');
 const fs = require('fs');
 const requestHandler = (req ,res) =>{
     const url = req.url;
@@ -39,5 +40,8 @@ const requestHandler = (req ,res) =>{
 //     someText: 'Some hard Coded text'
 // }
 
-module.exports.handler = requestHandler;
-module.exports.someText = "Some hard coded text";
+// module.exports.handler = requestHandler;
+// module.exports.someText = "Some hard coded text";
+
+exports.handler = requestHandler;
+exports.someText = 'Some hard coded text';
