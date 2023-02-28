@@ -1,11 +1,17 @@
 const http = require('http');
-const fs = require('fs');
-const route = require('./route')
 
-console.log(route.someText)
+const express = require('express');
 
+const app = express();
 
-const server = http.createServer(route.handler);
+app.use((req,res,next) =>{
+    console.log("Hello world");
+    next(); // this allow requst to continue next line
+})
 
-server.listen(4000);
+app.use((req,res,next) =>{
+    console.log("Hello world 2");
+    res.send({key1:24})
+})
 
+app.listen(4000);
