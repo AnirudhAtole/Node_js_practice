@@ -1,4 +1,3 @@
-const http = require('http');
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
@@ -9,7 +8,7 @@ const shopRoutes = require('./routes/shop');
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.use(shopRoutes);
+app.use('/shop',shopRoutes);
 app.use('/admin',adminRoutes);
 
 app.use((req,res,next)=>{
